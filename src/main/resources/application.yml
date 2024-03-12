@@ -1,11 +1,16 @@
 spring:
-  application:
-    name: deposito
-  profiles:
-    active: desenvolvimento
-  thymeleaf:
-    check-template-location: false
-
+  datasource:
+    url: jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+    username: rm99726
+    password: 060604
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 server:
   port: 80
+
+
+
+
